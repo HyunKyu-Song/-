@@ -1,0 +1,15 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 720px;
+}
+
+.container h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.change{
+    margin-top: 100px;
+}

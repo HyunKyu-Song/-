@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./introduce_work.css">
+    <title>졸업 작품</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduce_student.html">학생소개</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="introduce_work.html">작품소개</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container change">
+        <h2>FIFO</h2>
+    </div>
+    <div class="main-container container">
+        <div class="fifo">
+            <img src="./FIFO.png" alt="">
+            <div class="text">
+                <p>
+                    - FIFO 알고리즘은 이름 그대로 가장 먼저 메모리에 올라온 페이지를 가장 먼저 내보내는 알고리즘이다.<br><br>
+                    - 구현이 간단하지만 성능은 좋지 않은 편이다.<br><br>
+                    - 들어온 시간을 저장하거나 올라온 순서를 큐를 이용해 저장할 수 있다.<br><br>
+                    - Belady`s Anomaly 현상이 발생할 수 있다.
+                </p>
+            </div>
+            <img src="./FIFO2.jpg" style="width: 720px;" alt="">
+            <div class="text">
+                <p>
+                    - Belady`s Anomaly란 프레임의 개수가 많아져도 page-fault가 줄어들지 않고 늘어나는 현상을 말한다.<br><br>
+                    - 직관적으로 생각해보면 프레임의 개수가 많아지면 page-fault가 줄어들어야 할텐데, FIFO 알고리즘을 사용하면 그렇지 않을 수 있다.
+                </p>
+            </div>
+        </div>
+
+        <div class="container change">
+            <h2>OPT(Optimal)</h2>
+        </div>
+        <div class="opt">
+            <img src="./OPT.png" alt="">
+            <div class="text">
+                <p>
+                    - OPT 알고리즘은 앞으로 가장 오랫동안 사용하지 않을 페이지를 교체하는 알고리즘이다. <br><br>
+                    - 모든 페이지 교체 알고리즘 중 page-fault 발생이 가장 적다.<br><br>
+                    - Belady`s Anomaly 현상이 발생하지 않는다.<br><br>
+                    - 프로세스가 앞으로 사용할 페이지를 미리 알아야한다.<br><br>
+                    - 실제로 구현하기 거의 불가능한 알고리즘이다.<br><br>
+                    - 실제로 사용하기 보다는 연구 목적을 위해 사용된다.
+                </p>
+            </div>
+        </div>
+        
+        <div class="container  change">
+            <h2>LRU(Least Recently Used)</h2>
+        </div>
+        <div class="lru">
+            <img src="./LRU.png" alt="">
+            <div class="text">
+                <p>
+                    - LRU 알고리즘은 가장 오랫동안 사용하지 않은 페이지를 교체하는 알고리즘이다. <br><br>
+                    - 최적 알고리즘과 비슷한 효과를 낼 수 있다.<br><br>
+                    - 성능이 좋은 편이다.<br><br>
+                    - 많은 운영체제가 채택하는 알고리즘이다.
+                </p>
+            </div>
+        </div>
+        
+        <div class="container change">
+            <h2>LFU(Least Frequently Used)</h2>
+        </div>
+        <div class="lfu">
+            <img src="./LFU.png" alt="">
+            <div class="text">
+                <p>
+                    -LFU 알고리즘은 참조횟수가 가장 적은 페이지를 교체하는 알고리즘이다. <br><br>
+                    - 교체 대상이 여러 개라면 가장 오랫동안 사용하지 않은 페이지를 교체한다.
+                </p>
+            </div>
+        </div>
+        
+        <div class="container  change">
+            <h2>MFU(Most Frequently User)</h2>
+        </div>
+        <div class="mfu">
+            <img src="./MFU.png" alt="">
+            <div class="text">
+                <p>
+                    - MFU 알고리즘은 LFU와 반대로 참조 횟수가 가장 많은 페이지를 교체하는 알고리즘이다.
+                </p>
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+            </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+
+        </script>
+
+</body>
+
+</html>
